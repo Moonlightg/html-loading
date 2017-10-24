@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>定义在头部的进度条</title>
+	<style type="text/css">
+		.loading{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			z-index: 100;
+		}
+		.loading .pic{
+			width: 0%;
+			height: 5px;
+			border: 1px solid #900;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: red;
+
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		// 通过加载状态来显示进度条
+		document.onreadystatechange=function(){
+			if(document.readyState=="complete"){
+				$(".loading").fadeOut();
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="loading">
+		<div class="pic"></div>
+	</div>
+	<header>
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509417067&di=27522c38f34e8754756da95b31e769f5&imgtype=jpg&er=1&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Ff9dcd100baa1cd11a542ab2cbb12c8fcc2ce2dc2.jpg">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508822354756&di=9d9889aa17ae52a22e9b0c827ce482ad&imgtype=0&src=http%3A%2F%2Ff2.dn.anqu.com%2Fdown%2FY2FjZQ%3D%3D%2Fallimg%2F1208%2F48-120P3164959-51.jpg">
+	</header>
+	<script type="text/javascript">
+		$(".loading .pic").animate({width:"10%"},100)
+	</script>
+	<section class="banner">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508822354754&di=b8185dc5ee337c7b3bfb4e84f2c9b4e6&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F71cf3bc79f3df8dc9adfd7ffc711728b461028f9.jpg">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508822354753&di=a73f233938b35c7f7690555f468bc7ff&imgtype=0&src=http%3A%2F%2Ff1.bj.anqu.com%2Fdown%2FOWE3MA%3D%3D%2Fallimg%2F1208%2F48-120PQ61250.jpg">
+	</section>
+	<section class="about">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508826385835&di=616db9486fffefc6bc989d87658f67ba&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F08f790529822720ed3a082c370cb0a46f21fab99.jpg">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508826385834&di=89867fb177ecbd6f5501d146867e5c8a&imgtype=0&src=http%3A%2F%2Fpic39.nipic.com%2F20140314%2F2557875_101620438102_2.jpg">
+	</section>
+	<script type="text/javascript">
+		$(".loading .pic").animate({width:"40%"},100)
+	</script>
+	<section class="pro">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509421151&di=fbff8693812578ab8e987e13a987f958&imgtype=jpg&er=1&src=http%3A%2F%2Ftupian.enterdesk.com%2F2014%2Fxll%2F01%2F24%2F1%2Fweimei2.jpg">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508826438529&di=f245b7b10596726d31563044c2f4a08b&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2%2F565ebbbaaf019.jpg">
+	</section>
+	<section class="news">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508826438528&di=f26adb9e8f66c4be703a5d56f0271d2f&imgtype=0&src=http%3A%2F%2Fwww.weimeifan.net%2Fwp-content%2Fuploads%2F2017%2F04%2F2b978909fd4a12b305acbd4866e78452.jpg">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508826438528&di=5afe6d948919cc2f7cc4b5175187dafd&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fe%2F58f725478f794.jpg">
+	</section>
+	<script type="text/javascript">
+		$(".loading .pic").animate({width:"80%"},100)
+	</script>
+	<footer>
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508826438527&di=0eca06d52f040b60e3f4257c09e83e71&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F6%2F565eba1d389aa.jpg">
+	</footer>
+	<script type="text/javascript">
+		$(".loading .pic").animate({width:"100%"},100,function(){
+			$(".loading").fadeOut();
+		})
+	</script>
+	
+	
+</body>
+</html>
